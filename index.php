@@ -1,4 +1,5 @@
 <?php 
+//hosted on http://localhost:8080
 namespace api_client;
 error_reporting(E_ALL);
 ini_set('display_errors',1);
@@ -29,7 +30,7 @@ error_reporting(E_ALL);
  * 
  */
 
-//hosted on http://localhost:8080
+
 echo "<h1>Hello from Api-Client</h1>";
 
 //$apiUrl = 'http://localhost:8080/api/data';
