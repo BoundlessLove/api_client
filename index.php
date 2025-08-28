@@ -36,11 +36,12 @@ use Monolog\Handler\StreamHandler;
 
 
 echo "<h1>Hello from Api-Client</h1>";
+//echo exec ('whoami');
 $logger = new \Monolog\Logger('api_client_logger');
 $logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/logs/app.log', \Monolog\Logger::DEBUG));
 
 //$apiUrl = 'http://localhost:8080/api/data';
-$apiUrl = 'http://localhost:8070';
+$apiUrl = 'https://api-server2.systematicdefence.tech';
 $config = require __DIR__ . '/config.php';
 $apiKey = $config['validApiKey'];
 

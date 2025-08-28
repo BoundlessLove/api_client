@@ -1,0 +1,5 @@
+[28-Aug-2025 20:48:21 Australia/Sydney] PHP Warning:  require(/home5/systema1/api-client.systematicdefence.tech/config.php): Failed to open stream: No such file or directory in /home5/systema1/api-client.systematicdefence.tech/index.php on line 44
+[28-Aug-2025 20:48:21 Australia/Sydney] PHP Fatal error:  Uncaught Error: Failed opening required '/home5/systema1/api-client.systematicdefence.tech/config.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home5/systema1/api-client.systematicdefence.tech/index.php:44
+Stack trace:
+#0 {main}
+  thrown in /home5/systema1/api-client.systematicdefence.tech/index.php on line 44
