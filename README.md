@@ -43,9 +43,9 @@ sudo systemctl restart apache2
 
 #### iii. In order for Apache to know how to handle '.php' files, add this also to the api_client.conf file:
 
-*<FilesMatch \.php$> SetHandler application/x-httpd-php < / FilesMatch>*
+*<FilesMatch \.php$> SetHandler application/x-httpd-php < /FilesMatch>*
 
-#### iv. In order for Apache to know default starting page, also add to api_client.conf file:
+#### iv. In order for Apache to know default starting page, also add to api_client.conf file just before the ErrorLog sentence:
 DirectoryIndex index.php index.html
 
 #### v. Activate config with 'sudo a2ensite my-site.conf'
