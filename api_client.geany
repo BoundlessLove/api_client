@@ -27,10 +27,10 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
-FILE_NAME_0=219;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2.geany;0;4
-FILE_NAME_1=0;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2FMyService.php;0;4
-FILE_NAME_2=0;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2FServiceContainer.php;0;4
+current_page=1
+FILE_NAME_0=1573;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_client%2Fapi_client.geany;0;4
+FILE_NAME_1=51;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_client%2Fconfig.php;0;4
+FILE_NAME_2=1243;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_client%2Findex.php;0;4
 
 [VTE]
 last_dir=/home/administrator@internal.systematicdefence.tech
