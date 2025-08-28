@@ -63,8 +63,10 @@ sudo chown -R administrator@internal.systematicdefence.tech:www-data /home/admin
 #### ix. Verify that Apache has the required access to api_client webroot via cmd 'ls -ld':
 Outcome: drwxr-xr-x 4 administrator@internal.systematicdefence.tech www-data
 
-#### x Reload Apache with 'sudo systemctl reload apache2'
-#### xi. Try accessing site via `http://localhost:8080` 
+#### x Reload Apache with command 'sudo systemctl reload apache2'
+#### xi. Try accessing site via `http://localhost:8080`. 
+If issues encountered, run command to veiw error log inorder to identify exact problem:
+sudo tail -n 50 /var/log/apache2/error.log
 
 ## License
 This project is under a custom license. Use of the code requires **explicit written permission from the author**. See the [LICENSE](./LICENSE) file for details.
