@@ -5,4 +5,4 @@ Using the authorisation provided by the BoundlessLove/oauth_server project's cod
 
 Enjoy!
 ## License
-This project is under a custom license. Use of the code requires explicit written permission from the author for commercial use. See the [LICENSE](./LICENSE) file for details.
+This project is under a custom license. Use of the code requires **explicit written permission from the author for commercial use**. See the [LICENSE](./LICENSE) file for details.
