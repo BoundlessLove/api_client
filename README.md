@@ -39,7 +39,7 @@ sudo systemctl restart apache2
     
     CustomLog ${APACHE_LOG_DIR}/access.log combined
     
-</VirtualHost>
+< /VirtualHost>
 
 #### iii. In order for Apache to know how to handle '.php' files, add this also to the api_client.conf file:
 
