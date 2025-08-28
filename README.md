@@ -70,6 +70,9 @@ sudo chmod -R 755 /home/administrator@internal.systematicdefence.tech/projects/a
 
 sudo chown -R administrator@internal.systematicdefence.tech:www-data /home/administrator@internal.systematicdefence.tech/projects/api_client
 
+##### --Give Apache the ability to write to any log files:
+chmod 664 /home/administrator@internal.systematicdefence.tech/projects/api_client/logs/app.log
+
 ##### --To verify, that the granting of permissions have worked, run this command, and it should succeeded in writing 'test' to the app.log file: 
 sudo -u www-data echo "test" >> /path/to/logs/app.log
 
