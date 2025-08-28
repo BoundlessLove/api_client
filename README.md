@@ -42,9 +42,13 @@ sudo systemctl restart apache2
 </VirtualHost>
 
 #### iii. In order for Apache to know how to handle '.php' files, add this also to the api_client.conf file:
+
 <FilesMatch \.php$>
+
     SetHandler application/x-httpd-php
+
 </FilesMatch>
+
 #### iv. In order for Apache to know default starting page, also add to api_client.conf file:
 DirectoryIndex index.php index.html
 
