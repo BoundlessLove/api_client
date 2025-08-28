@@ -8,9 +8,13 @@ Apache was used. The process used was as following:
 ### a. Verify Apache has php module Enabled
 #### i. Run 'apache2ctl -M | grep php'. Outcome should show something like 'php_module (shared)'. If not continue with below steps.
 #### ii. Run following commands:
+
 sudo apt install
+
 sudo apt install libapache2-mod-php
+
 sudo a2enmod php
+
 sudo systemctl restart apache2
 
 
@@ -53,11 +57,17 @@ DirectoryIndex index.php index.html
 #### vii. Verify sytax of api_client.conf with 'sudo apache2ctl configtest'
 #### viii. Provide correct permissions - In Linux, for Apache to serve files from a directory like /home/administrator@internal.systematicdefence.tech/projects/api_server2, it needs **execute (`x`) permission** on **every parent directory** in that path. It also needs owner type permissions for its user 'www-data' on the virtual host directory, in order to be able to write files to in it. Hence, run following commands:
 ##### --Give others access to traverse the directories that lead to the webroot. Note it does not expose file contents.
+
 sudo chmod o+x /home
+
 sudo chmod o+x /home/administrator@internal.systematicdefence.tech
+
 sudo chmod o+x /home/administrator@internal.systematicdefence.tech/projects
+
 ##### --Give Apache the ability to execute files in the web root api_client (give www-data user's group owner rights on folder):
+
 sudo chmod -R 755 /home/administrator@internal.systematicdefence.tech/projects/api_client
+
 sudo chown -R administrator@internal.systematicdefence.tech:www-data /home/administrator@internal.systematicdefence.tech/projects/api_client
 
 #### ix. Verify that Apache has the required access to api_client webroot via cmd 'ls -ld':
@@ -66,6 +76,7 @@ Outcome: drwxr-xr-x 4 administrator@internal.systematicdefence.tech www-data
 #### x Reload Apache with command 'sudo systemctl reload apache2'
 #### xi. Try accessing site via `http://localhost:8080`. 
 If issues encountered, run command to veiw error log inorder to identify exact problem:
+
 sudo tail -n 50 /var/log/apache2/error.log
 
 ## License
