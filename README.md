@@ -17,7 +17,7 @@ sudo systemctl restart apache2
 ### b. Setup Virtual host
 #### i. Run 'sudo nano /etc/apache2/sites-available/api_client.conf'
 #### ii. Add something like:
-<VirtualHost *:8080
+<VirtualHost *:8080>
 
     ServerName api_client.com
     
