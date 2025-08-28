@@ -70,6 +70,9 @@ sudo chmod -R 755 /home/administrator@internal.systematicdefence.tech/projects/a
 
 sudo chown -R administrator@internal.systematicdefence.tech:www-data /home/administrator@internal.systematicdefence.tech/projects/api_client
 
+##### --To verify, that the granting of permissions have worked, run this command, and it should succeeded in writing 'test' to the app.log file: 
+sudo -u www-data echo "test" >> /path/to/logs/app.log
+
 #### ix. Verify that Apache has the required access to api_client webroot via cmd 'ls -ld':
 Outcome: drwxr-xr-x 4 administrator@internal.systematicdefence.tech www-data
 
