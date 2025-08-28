@@ -7,5 +7,5 @@ Using the authorisation provided by the BoundlessLove/oauth_server project's cod
 This project is under a custom license. Use of the code requires **explicit written permission from the author**. See the [LICENSE](./LICENSE) file for details.
 
 ## Versions
-### version 0.1 
+### v0.1 
 27 Aug 2025 98:48 PM- API Client created. secret key moved to file in public root, which cannot be accessed directly. Git setup. App working with API server on http://localhost:88
