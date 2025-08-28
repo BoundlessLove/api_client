@@ -18,18 +18,29 @@ sudo systemctl restart apache2
 #### i. Run 'sudo nano /etc/apache2/sites-available/api_client.conf'
 #### ii. Add something like:
 <VirtualHost *:8080
+
     ServerName api_client.com
+    
     ServerAdmin webmaster@localhost
+    
     DocumentRoot /home/administrator@internal.systematicdefence.tech/projects/api_client
+    
     <Directory /home/administrator@internal.systematicdefence.tech/projects/api_client>
+    
         Options Indexes FollowSymLinks
+        
         AllowOverride All
+        
         Require all granted
+        
     </Directory>
-    DirectoryIndex index.php default.html
+
     ErrorLog ${APACHE_LOG_DIR}/error.log
+    
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+    
 </VirtualHost>
+
 #### iii. In order for Apache to know how to handle '.php' files, add this also to the api_client.conf file:
 <FilesMatch \.php$>
     SetHandler application/x-httpd-php
@@ -51,7 +62,7 @@ sudo chmod -R 755 /home/administrator@internal.systematicdefence.tech/projects/a
 Outcome: drwxr-xr-x 4 administrator@internal.systematicdefence.tech www-data
 
 #### ix Reload Apache with 'sudo systemctl reload apache2'
-#### x. Try accessing site via `http://localhost:88` 
+#### x. Try accessing site via `http://localhost:8080` 
 
 ## License
 This project is under a custom license. Use of the code requires **explicit written permission from the author**. See the [LICENSE](./LICENSE) file for details.
