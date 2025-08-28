@@ -29,12 +29,18 @@ error_reporting(E_ALL);
  * 
  * 
  */
+require __DIR__ . '/vendor/autoload.php';
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 
 echo "<h1>Hello from Api-Client</h1>";
+$logger = new \Monolog\Logger('api_client_logger');
+$logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/logs/app.log', \Monolog\Logger::DEBUG));
 
 //$apiUrl = 'http://localhost:8080/api/data';
-$apiUrl = 'http://localhost:88';
+$apiUrl = 'http://localhost:8070';
 $config = require __DIR__ . '/config.php';
 $apiKey = $config['validApiKey'];
 
@@ -49,7 +55,9 @@ $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 if($httpCode ===200){
+	$logger->info(date("Y-m-d H:i:s", time()) . "API call succeeded");		
 	echo "Response: " . $response;
 }else{
+	$logger->info(date("Y-m-d H:i:s", time()) . "API call brought back non HTTP 200 code");
 	echo "Error: HTTP $httpCode";
 }

@@ -1,0 +1,20 @@
+{
+    "name": "nz_j/api_client",
+    "description": "This software is an API CLIENT",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "3.x-dev"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "NzJ\\ApiClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jyotirmay Sarna"
+        }
+    ],
+    "minimum-stability": "dev"
+}
