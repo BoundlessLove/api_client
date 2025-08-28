@@ -50,7 +50,7 @@ DirectoryIndex index.php index.html
 
 #### v. Activate config with 'sudo a2ensite my-site.conf'
 #### vi. Verify sytax of api_client.conf with 'sudo apache2ctl configtest'
-#### vii. Provide correct permissions - In Linux, for Apache to serve files from a directory like /home/administrator@internal.systematicdefence.tech/projects/api_server2, it needs **execute (`x`) permission** on **every parent directory** in that path and to the folder itself. Hence, run following commands:
+#### vii. Provide correct permissions - In Linux, for Apache to serve files from a directory like /home/administrator@internal.systematicdefence.tech/projects/api_server2, it needs **execute (`x`) permission** on **every parent directory** in that path. It also needs owner type permissions for its user 'www-data' on the virtual host directory, in order to be able to write files to in it. Hence, run following commands:
 ##### --Give others access to traverse the directories that lead to the webroot. Note it does not expose file contents.
 sudo chmod o+x /home
 sudo chmod o+x /home/administrator@internal.systematicdefence.tech
