@@ -3,7 +3,7 @@ Using the authorisation provided by the BoundlessLove/oauth_server project's cod
 
 *Note: For its use, a file called config.php needs to be added, which contains the ApiKey needed to authenticate to the API Server. This is needed in addition to the oauth_server code's authorisation, in order to communicate with the BoundlessLove/api_server2.*
 
-## Pre-Requisite: Setup virtual hosts on default apache2 server running on Ubuntu 22.04 LTS on port 8080 (accessible via http://localhost:8080)
+## Pre-Requisite: Setup virtual host on default apache2 server running on Ubuntu 22.04 LTS on port 8080 (accessible via http://localhost:8080)
 Apache was used. The process used was as following:
 ### a. Verify Apache has php module Enabled
 #### i. Run 'apache2ctl -M | grep php'. Outcome should show something like 'php_module (shared)'. If not continue with below steps.
